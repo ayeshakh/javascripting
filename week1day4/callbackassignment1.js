@@ -2,13 +2,16 @@
 function findWaldo(arr, found) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] === "Waldo") {
-      found();   // execute callback
+      found(i);
+
+       // execute callback
     }
   }
 }
 
-function actionWhenFound() {
-  console.log("Found Waldo at index 2 ");
+
+function actionWhenFound(ind) {
+  console.log("Found Waldo at index" + " " +ind);
 }
 
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound)
