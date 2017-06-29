@@ -1,0 +1,30 @@
+// Pseudo code
+//walk to intersection
+//look for traffic
+//is lioght gree for cars
+//wait
+//else
+//walt tot he other side
+//Put one foot after another
+//adjust balance
+//repeat until get to the other side
+
+function crossTheStreet()
+{
+  if(isThereATRafficLIght())
+  {
+  if(!trafficLightIsGreen())
+  {
+  walk(20)
+  }
+  }
+}
+function walk(distance)
+{
+  for (var d=0; d < distance; d++)
+  {
+  putYourRightFootFw();
+  putYourLeftFootFw();
+  }
+}
+crossTheStreet();

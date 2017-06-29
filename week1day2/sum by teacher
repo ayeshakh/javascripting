@@ -1,0 +1,72 @@
+// given i input number from the command line
+/i want to sum them all
+// so i can know the result
+
+function getNumbers()
+{
+let result=[];
+for(var i =2; i < process.argv.length; i++)
+{
+result.push(process.argv[i])
+}
+return result;
+}
+
+OR better way
+
+
+function getNumbers()
+{
+var numbers = [];
+var rawNumbers = process.argv.sice(2);
+}
+
+function sumNumbers(numbers)  // number is just
+{
+  var total = 0;
+  for(var i = 0; i < numbers.length; i++)
+  {
+  total = total + number[i]
+   OR // total+= number[i] short form += or -= or *= or /=
+  }
+  return total; // very important
+}
+
+var result = sumNumbers(getNumbers());
+console.log(result);
+
+//OR
+
+function getNumbers()
+  {
+  var numbers = [];
+  var rawNumbers = process.argv.sice(2);
+  for (var number of rawNumbers)
+  {
+    if(!isNan(number))
+    {
+      numbers.push(Number(number));
+    }
+  }
+return Number;
+}
+}
+
+//OR
+function definitelyANumber(maybeNummber)
+{
+return !isNan(maybenNmber)
+}
+
+function getNumbers()
+  {
+  var numbers = [];
+  var rawNumbers = process.argv.sice(2);
+  for (var number of rawNumbers)
+  {
+    if(definitelyANumber(number))
+    {
+      numbers.push(Number(number));
+    }
+  }
+return Number;
